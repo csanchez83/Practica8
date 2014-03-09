@@ -21,8 +21,8 @@ function listar()
 
     // find all contacts with 'Bob' in any name field
     var options      = new ContactFindOptions();
-    //options.filter   = "c";
-    //options.multiple = true;
+    options.filter   = "a";
+    options.multiple = true;
     var fields       = ["*"];
     navigator.contacts.find(fields, onSuccess, onError, options);
     
