@@ -4,7 +4,7 @@ function listar()
     {
         for (i=0; i <= contacts.length; i++)
         {
-            $('#contactos .plastic').html('<li><a href="tel:' + contacts[i].phoneNumbers[0] + '">' + contacts[i].displayName + '</a></li>');
+            $('#contactos .plastic').append('<li><a href="tel:' + contacts[i].phoneNumbers[0] + '">' + contacts[i].displayName + '</a></li>');
         }
         
         
